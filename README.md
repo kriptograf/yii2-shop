@@ -87,3 +87,25 @@ the installed application. You only need to do these once for all.
 
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
+
+Install EAV:
+Add github repository
+
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/mirocow/yii2-eav.git"
+        }
+    ]
+
+and then
+
+php composer.phar require --prefer-dist "mirocow/yii2-eav" "*"
+
+Configure
+
+php yii migrate/up --migrationPath=@mirocow/eav/migrations
+
+or
+
+php yii migrate/up --migrationPath=vendor/mirocow/yii2-eav/src/migrations
