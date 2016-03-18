@@ -89,6 +89,7 @@ To login into the application, you need to first sign up, with any of your email
 Then, you can login into the application with same email address and password at any time.
 
 Install EAV:
+------------
 Add github repository
 
     "repositories": [
@@ -109,3 +110,13 @@ php yii migrate/up --migrationPath=@mirocow/eav/migrations
 or
 
 php yii migrate/up --migrationPath=vendor/mirocow/yii2-eav/src/migrations
+
+Install yii2-upload-behavior
+----------------------------
+Either run
+
+php composer.phar require --prefer-dist yii-dream-team/yii2-upload-behavior "*"
+or add
+
+"yii-dream-team/yii2-upload-behavior": "*"
+to the require section of your composer.json.
